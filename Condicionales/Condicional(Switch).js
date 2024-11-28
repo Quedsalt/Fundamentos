@@ -16,7 +16,7 @@ switch(expresion) {
 
 let expr = "Papayas"
 
-switch(expr) {
+switch(expr) { // ===
     case "Naranjas":
         console.log("Las naranjas cuestan $20 pesos el kilo")
         break
