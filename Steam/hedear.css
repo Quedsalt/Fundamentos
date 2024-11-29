@@ -12,3 +12,12 @@ header {
     margin: 0;
     padding: 0
 }
+
+body {
+    background: rgb(131, 128, 128);
+}
+
+.img_logo {
+    width: 50%;
+    height: auto;
+}
