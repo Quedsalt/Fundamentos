@@ -3,21 +3,234 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background: #171d25;
+    margin: 0px;
+    padding: 0px
+
 }
+
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  
 
 .elemets_menu {
     display: flex;
     gap: 20px;
     list-style: none;
     margin: 0;
-    padding: 0
+    padding: 0;
+    margin-left: 0px;
+    margin-right: 235px; /*Espacio entre el cost */
+    vertical-align: top;
+}
+
+.elemets_menu li a{
+    color: #b8b6b4;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 body {
-    background: rgb(131, 128, 128);
+    background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1888930/page_bg_generated_v6b.jpg?t=1728603021);
+    margin: 0;
+    padding: 0
 }
 
 .img_logo {
-    width: 50%;
-    height: auto;
+    float: left;
+    margin-right: 35px;
+    width: 150px;
+    height: 80px;
+}
+
+
+.global_header {
+    display: flex;
+    background: #171d25;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    width: 940px;
+    height: 104px;
+    margin: 0px auto;
+    color: #b8b6b4;
+    align-items: center;
+    text-decoration: none;
+}
+
+#user {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: 6px;
+    height: 21px;
+    line-height: 21px;
+    color: #b8b6b4;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.content_user {
+    display: flex;
+}
+
+.notification {
+    background-color: rgb(92, 126, 16);
+    
+    padding: 0 12px;
+    width: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.Family {
+    background-color: rgba(103, 112, 123, 0.2);
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAYAAACAl21KAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMS1jMDAxIDc5LmE4ZDQ3NTM0OSwgMjAyMy8wMy8yMy0xMzowNTo0NSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQ5QzIxNDIwNEU2RTExRUVBQ0Y0QjY1NzI2NTE3RUVEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQ5QzIxNDIxNEU2RTExRUVBQ0Y0QjY1NzI2NTE3RUVEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDlDMjE0MUU0RTZFMTFFRUFDRjRCNjU3MjY1MTdFRUQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDlDMjE0MUY0RTZFMTFFRUFDRjRCNjU3MjY1MTdFRUQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4ACHYVAAABY0lEQVR42tzUzytEURTA8XkTCwshWRIWFhMjDalJiZQSC+UfkKzsLC3ewspCjZpsJSspOyW7mdSwMGSyUooslKWi/Ly+t87lzJ3Hamzc+kz3nHPf6b1735vAGBOrxojHqjT+rNE09rGC5oj1jchgD1NlFbtHIokH8z2yquasqfoTelxN31Ea9SoeQa2K7XxMxXVyTcWjFfCi4iO8qtjO8yp+xokLAu/4JzCDS2Tx6O1RAxbRii3kovYoSgqHov+3tTroxg7uMCC5Y7W5Z5KzDW+wjYTfaBC36qIhyZ+rXElywyp3jV7daNOUjwziSKOIU5nbPV311m7YHjWyVW3eprbbg5CTTKm8zXV4azvtj2v0oQpFzOIdk/K22/kuDjAnzfpk/Zs+tYK61VHJLZnKEUptXOXstV/v0TKSuMcCunDxw/eZwBXW0YISQvdoYcSLl5NH8j/yJvkC5nUh+L9/bJ8CDACBt6K3eAQ3DQAAAABJRU5ErkJggg==);
+    padding: 0 12px;
+    width: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.foto {
+    width: 40px;
+    height: 40px;
+}
+
+#button_install {
+    background-color: rgba(103, 112, 123, 0.2);
+    color: #e5e4dc;
+}
+
+
+#waller {
+    display: flex;
+    right: 0px;
+    left: 0px;
+    list-style: none;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+#waller a{
+    color: #b8b6b4;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.waller_diner {
+    margin-left: 10px;
+}
+
+.buttoon-install_gray {
+    padding-left: 35px;
+    padding-right: 9px;
+    background-position: 10px 5px;
+    background-image: url(https://store.fastly.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1);
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: #e5e4dc;
+    background-color: rgba(103, 112, 123, 0.2);
+}
+
+#menu_tienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#menu_tienda a {
+    text-decoration: none;
+    color: #e5e4dc;
+    font-size: 12px;
+}
+
+.deseados {
+    margin-left: 760px;
+    background: #718fa0;
+    margin-top: 10px;
+    padding: 2px 20px 2px 20px;
+    cursor: pointer;
+    
+}
+
+.deseados a {
+    text-decoration: none;
+    color: black;
+}
+
+.navegacion_tienda {
+ display: flex;
+ flex-direction: row;
+ gap: 30px;
+ margin-top: 5px;
+ align-items: center;
+ background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+ padding: 2px 4px 4px 10px
+}
+
+.buscador_tienda {
+    display: flex;
+    background: #316282;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2);
+    height: 27px;
+    padding: 0px 0px 0px 10px;
+    gap: 150px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.boton_buscar {
+    border: none;
+    background-color: transparent;
+    color: #eeeeee;
+    margin-left: 8px;
+    line-height: 26px;
+    color: #103861;
+    cursor: pointer;
+}
+
+.img_quedsalt_tienda {
+    width: 15px;
+    height: 15px;
+    
+}
+
+.tienda_you {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.content_etiquetas {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 225px;
+}
+
+#etiquetas {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#etiquetas a{
+    text-decoration: none;
+    color: #8f98a0;
+    font-size: 12px;
 }
