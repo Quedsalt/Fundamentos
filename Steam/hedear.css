@@ -173,7 +173,7 @@ body {
 .navegacion_tienda {
  display: flex;
  flex-direction: row;
- gap: 30px;
+ gap: 23px;
  margin-top: 5px;
  align-items: center;
  background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
@@ -219,7 +219,7 @@ body {
 .content_etiquetas {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 195px;
 }
 
@@ -228,6 +228,7 @@ body {
     justify-content: center;
     flex-direction: row;
     gap: 10px;
+    margin-left: 15px;
 }
 
 #etiquetas a{
@@ -240,12 +241,13 @@ body {
     display: flex;
     padding: 2px 4px 4px 20px;
     flex-direction: row;
+    margin-left: 15px;
 }
 
 .home_header {
     display: flex;
     margin-left: 175px;
-    gap: 525px;
+    gap: 480px;
 }
 
 #home_header_1{
@@ -282,10 +284,15 @@ body {
 
 #block_video {
     display: flex;
+    width: 805px;
+    height: 342px;
+    align-items: flex-end;
 }
 
 .game_video {
-    margin-left: 195px;
+    width: 595px;
+    height: 340px;
+    margin-left: 210px;
 }
 
 .content_descripcion {
@@ -296,7 +303,7 @@ body {
 .game_header_image_full {
     margin-left: 15px;
     width: 320px;
-    height: 200px;
+    height: 150px;
 }
 
 #descripcion_game {
@@ -306,11 +313,53 @@ body {
 
 }
 
-
 #descripcion_game_p  {
     font-size: 13px;
     line-height: 18px;
     padding-right: 16px;
     margin-left: 10px;
     color: #c6d4df;
+}
+
+#etiquetas_game {
+    color: #c6d4df;
+    margin-left: 15px;
+    font-size: 12px;
+    margin-top: 5px;
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+    color: #556772;
+}
+
+#a_game {
+    color: rgb(0, 255, 255);
+    margin-left: 8px;
+    font-size: 12px;
+    margin-top: 5px;
+    align-items: baseline;
+}
+
+#Reseñas_recientes, #Reseñas_generales, #Fecha_de_lanzamiento, #Desarrollador, #Editor {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#Editor_a {
+    color: rgb(0, 255, 255);
+    margin-left: 52px;
+    font-size: 12px;
+    margin-top: 5px;
+    align-items: baseline;
+}
+
+
+
+#fecha {
+    color: #8f98a0;
+    margin-left: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+    align-items: baseline;
 }
