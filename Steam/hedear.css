@@ -57,7 +57,7 @@ body {
     display: flex;
     position: relative;
     width: 940px;
-    height: 104px;
+    height: 100px;
     margin: 0px auto;
     color: #b8b6b4;
     align-items: center;
@@ -79,7 +79,7 @@ body {
     font-size: 12px;
 }
 
-.content_user {
+.content_user, .content_block_game {
     display: flex;
 }
 
@@ -147,7 +147,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 #menu_tienda a {
@@ -160,9 +159,9 @@ body {
     margin-left: 760px;
     background: #718fa0;
     margin-top: 10px;
-    padding: 2px 20px 2px 20px;
+    padding: 3px 17px 3px 17px;
     cursor: pointer;
-    
+    font-size: 12px;
 }
 
 .deseados a {
@@ -179,6 +178,7 @@ body {
  background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
  padding: 2px 4px 4px 10px;
  cursor: pointer;
+ margin-left: -10px;
 }
 
 .buscador_tienda {
@@ -219,7 +219,7 @@ body {
 .content_etiquetas {
     display: flex;
     flex-direction: row;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-left: 195px;
 }
 
@@ -227,14 +227,14 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 10px;
+    gap: 5px;
     margin-left: 15px;
 }
 
 #etiquetas a{
     text-decoration: none;
     color: #8f98a0;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .home_header_content {
@@ -253,6 +253,7 @@ body {
 #home_header_1{
     font-size: 30px;
     color: white;
+    height: 54px;
 }
 
 #home_header_2 {
@@ -260,26 +261,23 @@ body {
     font-size: 15px;
     padding: 0 15px;
     line-height: 30px;
-    padding: 1px;
     display: inline-block;
     cursor: pointer;
-
+    border-radius: 3px;
 }
 
 .home_header_content a{
     text-decoration: none;
     color: #67c1f5;
-}
-
-.content_block_game {
-    display: flex;
+    margin-left: -27px;
+    margin-right: 110px;
 }
 
 .block_game {
     display: flex;
     flex-direction: row;
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);
-    height: 500px;
+    height: 420px;
 }
 
 #block_video {
@@ -287,6 +285,7 @@ body {
     width: 805px;
     height: 342px;
     align-items: flex-end;
+    flex-direction: column;
 }
 
 .game_video {
@@ -295,7 +294,7 @@ body {
     margin-left: 210px;
 }
 
-.content_descripcion {
+.content_descripcion, .Etiquetas_populares_content {
     display: flex;
     flex-direction: column;
 }
@@ -321,7 +320,7 @@ body {
     color: #c6d4df;
 }
 
-#etiquetas_game {
+#etiquetas_game{
     color: #c6d4df;
     margin-left: 15px;
     font-size: 12px;
@@ -333,11 +332,11 @@ body {
 }
 
 #a_game {
-    color: rgb(0, 255, 255);
+    color: #81cdf8;
     margin-left: 8px;
     font-size: 12px;
-    margin-top: 5px;
     align-items: baseline;
+    text-decoration: none;
 }
 
 #Reseñas_recientes, #Reseñas_generales, #Fecha_de_lanzamiento, #Desarrollador, #Editor {
@@ -347,11 +346,11 @@ body {
 }
 
 #Editor_a {
-    color: rgb(0, 255, 255);
+    color: #81cdf8;
     margin-left: 52px;
     font-size: 12px;
-    margin-top: 5px;
     align-items: baseline;
+    text-decoration: none;
 }
 
 
@@ -360,6 +359,49 @@ body {
     color: #8f98a0;
     margin-left: 5px;
     font-size: 12px;
+    margin-top: 8px;
+    align-items: baseline;
+}
+
+.etiquetas_populares {
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+#etiqueta_popular_span {
+    color: #81cdf8;
+    font-size: 11px;
     margin-top: 5px;
     align-items: baseline;
+    text-decoration: none;
+    margin-left: -3px;
+    background: rgba(103, 193, 245, 0.2);
+    padding: 5px;
+    text-decoration: none;
+}
+
+#a_e {
+    padding: 0px;
+    margin-left: 11px;
+    text-decoration: none;
+}
+
+#a_a {
+    text-decoration: none;
+}
+
+#a_x {
+    color: #81cdf8;
+    font-size: 11px;
+    margin-top: 5px;
+    align-items: baseline;
+    text-decoration: none;
+    margin-left: -3px;
+    background: rgba(103, 193, 245, 0.2);
+    padding: 5px 12px 5px 12px;
+    text-decoration: none;
+}
+
+#img_video {
+    cursor: pointer;
 }
